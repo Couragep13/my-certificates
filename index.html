@@ -11,63 +11,76 @@
             margin: 0;
             padding: 0;
         }
+
         header {
             background-color: #333;
             color: white;
-            padding: 20px;
+            padding: 40px 20px;
             text-align: center;
         }
+
         h1 {
             margin: 0;
+            font-size: 48px;
         }
+
         .container {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 20px;
-            padding: 20px;
-            max-width: 1200px;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 30px;
+            padding: 40px;
+            max-width: 1400px;
             margin: auto;
         }
+
         .card {
             background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 20px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.15);
             overflow: hidden;
-            transition: transform 0.2s;
+            transition: transform 0.3s;
         }
+
         .card:hover {
-            transform: translateY(-5px);
+            transform: translateY(-10px);
         }
+
         .card img {
             width: 100%;
-            height: 180px;
+            height: 300px;
             object-fit: cover;
         }
+
         .card-body {
-            padding: 15px;
+            padding: 25px;
         }
+
         .card-title {
-            font-size: 18px;
+            font-size: 28px;
             font-weight: bold;
-            margin-bottom: 10px;
-            color: #333;
+            margin-bottom: 15px;
+            color: #222;
         }
+
         .card-description {
-            font-size: 14px;
-            color: #666;
+            font-size: 18px;
+            color: #555;
+            line-height: 1.6;
         }
+
         footer {
             text-align: center;
-            padding: 20px;
+            padding: 30px;
             background: #333;
             color: white;
+            font-size: 18px;
         }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>รวมผลงานของฉัน</h1>
+    <h1>ผลงานของฉัน</h1>
 </header>
 
 <div class="container">
@@ -76,93 +89,20 @@
         <img src="intro.jpg" alt="ผลงาน 1">
         <div class="card-body">
             <div class="card-title">ชื่อผลงาน 1</div>
-            <div class="card-description">คำอธิบายสั้น ๆ ของผลงานนี้ เช่น วัตถุประสงค์หรือสิ่งที่เรียนรู้จากการทำ</div>
+            <div class="card-description">คำอธิบายรายละเอียดของผลงาน เช่น วัตถุประสงค์ เทคนิคที่ใช้ หรือสิ่งที่ได้เรียนรู้จากการทำงานนี้</div>
         </div>
     </div>
 
-    <!-- ตัวอย่างผลงาน 2 -->
-    <div class="card">
-        <img src="intro.jpg" alt="ผลงาน 2">
-        <div class="card-body">
-            <div class="card-title">ชื่อผลงาน 2</div>
-            <div class="card-description">คำอธิบายของผลงานที่สอง ซึ่งอาจจะเป็นโปรเจกต์ในโรงเรียนหรือกิจกรรมนอกเวลาเรียน</div>
-        </div>
-    </div>
     <!-- ตัวอย่างผลงาน 2 -->
     <div class="card">
         <img src="a1.jpg" alt="ผลงาน 2">
         <div class="card-body">
-            <div class="card-title">ชื่อผลงาน 3</div>
-            <div class="card-description">คำอธิบายของผลงานที่สอง ซึ่งอาจจะเป็นโปรเจกต์ในโรงเรียนหรือกิจกรรมนอกเวลาเรียน</div>
-        </div>
-    </div>
-    <!-- ตัวอย่างผลงาน 2 -->
-    <div class="card">
-        <img src="intro.jpg" alt="ผลงาน 2">
-        <div class="card-body">
             <div class="card-title">ชื่อผลงาน 2</div>
-            <div class="card-description">คำอธิบายของผลงานที่สอง ซึ่งอาจจะเป็นโปรเจกต์ในโรงเรียนหรือกิจกรรมนอกเวลาเรียน</div>
-        </div>
-    </div>
-    <!-- ตัวอย่างผลงาน 2 -->
-    <div class="card">
-        <img src="intro.jpg" alt="ผลงาน 2">
-        <div class="card-body">
-            <div class="card-title">ชื่อผลงาน 2</div>
-            <div class="card-description">คำอธิบายของผลงานที่สอง ซึ่งอาจจะเป็นโปรเจกต์ในโรงเรียนหรือกิจกรรมนอกเวลาเรียน</div>
-        </div>
-    </div>
-    <!-- ตัวอย่างผลงาน 2 -->
-    <div class="card">
-        <img src="intro.jpg" alt="ผลงาน 2">
-        <div class="card-body">
-            <div class="card-title">ชื่อผลงาน 2</div>
-            <div class="card-description">คำอธิบายของผลงานที่สอง ซึ่งอาจจะเป็นโปรเจกต์ในโรงเรียนหรือกิจกรรมนอกเวลาเรียน</div>
-        </div>
-    </div>
-    <!-- ตัวอย่างผลงาน 2 -->
-    <div class="card">
-        <img src="intro.jpg" alt="ผลงาน 2">
-        <div class="card-body">
-            <div class="card-title">ชื่อผลงาน 2</div>
-            <div class="card-description">คำอธิบายของผลงานที่สอง ซึ่งอาจจะเป็นโปรเจกต์ในโรงเรียนหรือกิจกรรมนอกเวลาเรียน</div>
-        </div>
-    </div>
-    <!-- ตัวอย่างผลงาน 2 -->
-    <div class="card">
-        <img src="intro.jpg" alt="ผลงาน 2">
-        <div class="card-body">
-            <div class="card-title">ชื่อผลงาน 2</div>
-            <div class="card-description">คำอธิบายของผลงานที่สอง ซึ่งอาจจะเป็นโปรเจกต์ในโรงเรียนหรือกิจกรรมนอกเวลาเรียน</div>
-        </div>
-    </div>
-    <!-- ตัวอย่างผลงาน 2 -->
-    <div class="card">
-        <img src="intro.jpg" alt="ผลงาน 2">
-        <div class="card-body">
-            <div class="card-title">ชื่อผลงาน 2</div>
-            <div class="card-description">คำอธิบายของผลงานที่สอง ซึ่งอาจจะเป็นโปรเจกต์ในโรงเรียนหรือกิจกรรมนอกเวลาเรียน</div>
-        </div>
-    </div>
-    <!-- ตัวอย่างผลงาน 2 -->
-    <div class="card">
-        <img src="intro.jpg" alt="ผลงาน 2">
-        <div class="card-body">
-            <div class="card-title">ชื่อผลงาน 2</div>
-            <div class="card-description">คำอธิบายของผลงานที่สอง ซึ่งอาจจะเป็นโปรเจกต์ในโรงเรียนหรือกิจกรรมนอกเวลาเรียน</div>
-        </div>
-    </div>
-    <!-- ตัวอย่างผลงาน 2 -->
-    <div class="card">
-        <img src="intro.jpg" alt="ผลงาน 2">
-        <div class="card-body">
-            <div class="card-title">ชื่อผลงาน 2</div>
-            <div class="card-description">คำอธิบายของผลงานที่สอง ซึ่งอาจจะเป็นโปรเจกต์ในโรงเรียนหรือกิจกรรมนอกเวลาเรียน</div>
+            <div class="card-description">รายละเอียดของโปรเจกต์นี้ เช่น โปรแกรมที่ใช้ ความท้าทาย หรือผลลัพธ์ที่ได้</div>
         </div>
     </div>
 
-
-    <!-- เพิ่มผลงานได้เรื่อย ๆ ตามต้องการ -->
+    <!-- เพิ่มผลงานเพิ่มเติมได้ที่นี่ -->
 </div>
 
 <footer>
