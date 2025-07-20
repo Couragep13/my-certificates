@@ -1,64 +1,100 @@
 <!DOCTYPE html>
-<html>
+<html lang="th">
 <head>
-  <meta charset="UTF-8">
-  <title>My Portfolio</title>
-  <style>
-    body {
-      font-family: sans-serif;
-      padding: 30px;
-      background: #f9f9f9;
-    }
-    .card {
-      border: 1px solid #ccc;
-      padding: 20px;
-      margin: 15px 0;
-      background: #fff;
-      border-radius: 8px;
-    }
-    img {
-      max-width: 100%;
-      height: auto;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ผลงานของฉัน</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+        .card-body {
+            padding: 15px;
+        }
+        .card-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .card-description {
+            font-size: 14px;
+            color: #666;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: white;
+        }
+    </style>
 </head>
 <body>
-  <h1>My Portfolio - ผลงานของฉัน</h1>
 
-  <div class="card">
-    <img src="intro.jpg" alt="nsc cert">
-  </div>
+<header>
+    <h1>รวมผลงานของฉัน</h1>
+</header>
 
-  <div class="card">
-    <h2>🤖 แข่งขันหุ่นยนต์ระดับประเทศ</h2>
-    <img src="a1.jpg" alt="robot competition">
-    <p>ออกแบบและเขียนโปรแกรมหุ่นยนต์แข่งจับธง ได้รางวัลชมเชย</p>
-  </div>
+<div class="container">
+    <!-- ตัวอย่างผลงาน 1 -->
+    <div class="card">
+        <img src="intro.jpg" alt="ผลงาน 1">
+        <div class="card-body">
+            <div class="card-title">ชื่อผลงาน 1</div>
+            <div class="card-description">คำอธิบายสั้น ๆ ของผลงานนี้ เช่น วัตถุประสงค์หรือสิ่งที่เรียนรู้จากการทำ</div>
+        </div>
+    </div>
 
-  <div class="card">
-    <h2>🧠 โครงงานวิทยาศาสตร์</h2>
-    <img src="a1.jpg" alt="science project">
-    <p>โครงงานเรื่องการวัดระดับมลพิษในอากาศโดยใช้เซนเซอร์ Arduino</p>
-  </div>
-  <div class="card">
-    <h2>🧠 โครงงานวิทยาศาสตร์</h2>
-    <img src="a1.jpg" alt="science project">
-    <p>โครงงานเรื่องการวัดระดับมลพิษในอากาศโดยใช้เซนเซอร์ Arduino</p>
-  </div>
-  <div class="card">
-    <h2>🧠 โครงงานวิทยาศาสตร์</h2>
-    <img src="a1.jpg" alt="science project">
-    <p>โครงงานเรื่องการวัดระดับมลพิษในอากาศโดยใช้เซนเซอร์ Arduino</p>
-  </div>
-  <div class="card">
-    <h2>🧠 โครงงานวิทยาศาสตร์</h2>
-    <img src="a1.jpg" alt="science project">
-    <p>โครงงานเรื่องการวัดระดับมลพิษในอากาศโดยใช้เซนเซอร์ Arduino</p>
-  </div>
-  <div class="card">
-    <h2>🧠 โครงงานวิทยาศาสตร์</h2>
-    <img src="a1.jpg" alt="science project">
-    <p>โครงงานเรื่องการวัดระดับมลพิษในอากาศโดยใช้เซนเซอร์ Arduino</p>
-  </div>
- </body>
+    <!-- ตัวอย่างผลงาน 2 -->
+    <div class="card">
+        <img src="images/work2.jpg" alt="ผลงาน 2">
+        <div class="card-body">
+            <div class="card-title">ชื่อผลงาน 2</div>
+            <div class="card-description">คำอธิบายของผลงานที่สอง ซึ่งอาจจะเป็นโปรเจกต์ในโรงเรียนหรือกิจกรรมนอกเวลาเรียน</div>
+        </div>
+    </div>
+
+    <!-- เพิ่มผลงานได้เรื่อย ๆ ตามต้องการ -->
+</div>
+
+<footer>
+    © 2025 ผลงานโดย [ชื่อของคุณ]
+</footer>
+
+</body>
 </html>
